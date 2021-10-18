@@ -19,7 +19,7 @@ export default class HeaderDown extends Component {
     }
     render() {
         return (
-            <div className="d-flex mt-5 pd-0 pt-4 pl-3 pr-3">
+            <div className="d-flex mt-5 pt-3 pl-3 pr-3 header-down">
                 {this.state.options.map((option) => (
                     <HeaderDownOptions option={option} />
                 ))}

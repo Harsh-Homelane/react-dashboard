@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class Header extends Component {
     render() {
         return (
-            <div className="w-100 pl-4 d-flex  justify-content-between fixed-top">
+            <div className="header w-100 pl-4 pr-4 d-flex  justify-content-between fixed-top">
                 <div>
                     <i className="fa fa-bars pr-3"></i>
                     <img
