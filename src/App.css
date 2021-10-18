@@ -86,6 +86,10 @@
     border-top: 2px solid #dfdcdc;
 }
 
+.table-column:hover {
+  background-color: #dfdcdc;
+}
+
 .table-column-block {
     width: 11%;
 }
