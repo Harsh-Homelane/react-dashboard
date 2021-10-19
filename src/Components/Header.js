@@ -13,7 +13,7 @@ export default class Header extends Component {
                         alt="logo"
                     />
                 </div>
-                <div className="d-flex align-self-center header-center">
+                <div className="header-center">
                     {" "}
                     <strong> Order Management </strong>
                 </div>

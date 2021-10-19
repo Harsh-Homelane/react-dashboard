@@ -4,7 +4,7 @@ export default class TableColumns extends Component {
     render() {
         return (
             <div className="table-column d-flex justify-content-between align-items-center">
-                <div className="table-column-block">
+                <div className="first-column table-column-block d-flex align-items-center justify-content-center">
                     {this.props.customerId || "-"}
                 </div>
                 <div className="table-column-block">

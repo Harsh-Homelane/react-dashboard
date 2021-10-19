@@ -72,7 +72,7 @@ export default class Table extends Component {
         }
     };
     next = () => {
-        if (this.state.pageCount < this.state.page.length) {
+        if (this.state.pageCount < this.state.page.length - 1) {
             this.setState((prevState) => ({
                 pageCount: prevState.pageCount + 1,
             }));
@@ -88,55 +88,57 @@ export default class Table extends Component {
     render() {
         return (
             <div className="table">
-                <TableHead />
-                {this.state.displayColumn.map(
-                    (index) =>
-                        this.state.count >
-                            this.state.pageCount * 10 + index && (
-                            <TableColumns
-                                customerId={
-                                    this.state.customerId[
-                                        this.state.pageCount * 10 + index
-                                    ]
-                                }
-                                customerName={
-                                    this.state.customerName[
-                                        this.state.pageCount * 10 + index
-                                    ]
-                                }
-                                showroomName={
-                                    this.state.showroomName[
-                                        this.state.pageCount * 10 + index
-                                    ]
-                                }
-                                orderValue={
-                                    this.state.orderValue[
-                                        this.state.pageCount * 10 + index
-                                    ]
-                                }
-                                woodworkArmadio={
-                                    this.state.woodworkArmadio[
-                                        this.state.pageCount * 10 + index
-                                    ]
-                                }
-                                status={
-                                    this.state.status[
-                                        this.state.pageCount * 10 + index
-                                    ]
-                                }
-                                factory={
-                                    this.state.factory[
-                                        this.state.pageCount * 10 + index
-                                    ]
-                                }
-                                daysInProduction={
-                                    this.state.daysInProduction[
-                                        this.state.pageCount * 10 + index
-                                    ]
-                                }
-                            />
-                        )
-                )}
+                <div className="table-body d-flex flex-column flex-wrap">
+                    <TableHead />
+                    {this.state.displayColumn.map(
+                        (index) =>
+                            this.state.count >
+                                this.state.pageCount * 10 + index && (
+                                <TableColumns
+                                    customerId={
+                                        this.state.customerId[
+                                            this.state.pageCount * 10 + index
+                                        ]
+                                    }
+                                    customerName={
+                                        this.state.customerName[
+                                            this.state.pageCount * 10 + index
+                                        ]
+                                    }
+                                    showroomName={
+                                        this.state.showroomName[
+                                            this.state.pageCount * 10 + index
+                                        ]
+                                    }
+                                    orderValue={
+                                        this.state.orderValue[
+                                            this.state.pageCount * 10 + index
+                                        ]
+                                    }
+                                    woodworkArmadio={
+                                        this.state.woodworkArmadio[
+                                            this.state.pageCount * 10 + index
+                                        ]
+                                    }
+                                    status={
+                                        this.state.status[
+                                            this.state.pageCount * 10 + index
+                                        ]
+                                    }
+                                    factory={
+                                        this.state.factory[
+                                            this.state.pageCount * 10 + index
+                                        ]
+                                    }
+                                    daysInProduction={
+                                        this.state.daysInProduction[
+                                            this.state.pageCount * 10 + index
+                                        ]
+                                    }
+                                />
+                            )
+                    )}
+                </div>
                 <div className="d-flex justify-content-between w-100 fixed-bottom footer-pages">
                     {this.state.page.length !== 1 && (
                         <button

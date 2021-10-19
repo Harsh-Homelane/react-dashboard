@@ -4,7 +4,7 @@ export default class TableHead extends Component {
     render() {
         return (
             <div className="d-flex justify-content-between table-head">
-                <div className="table-head-boxes">
+                <div className="first-column table-head-boxes  d-flex align-items-center justify-content-center">
                     <div className="table-head-text">Customer Id</div>
                 </div>
                 <div className="table-head-boxes">
