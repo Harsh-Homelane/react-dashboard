@@ -71,6 +71,20 @@ export default class Table extends Component {
             this.setState({ pageCount: pageNumber - 1 });
         }
     };
+    next = () => {
+        if (this.state.pageCount < this.state.page.length) {
+            this.setState((prevState) => ({
+                pageCount: prevState.pageCount + 1,
+            }));
+        }
+    };
+    previous = () => {
+        if (this.state.pageCount > 0) {
+            this.setState((prevState) => ({
+                pageCount: prevState.pageCount - 1,
+            }));
+        }
+    };
     render() {
         return (
             <div className="table">
@@ -123,24 +137,41 @@ export default class Table extends Component {
                             />
                         )
                 )}
-                <div className="d-flex justify-content-center w-100 fixed-bottom footer-pages">
-                    {this.state.page.length !== 1 &&
-                        this.state.page.map((element) =>
-                            element === this.state.pageCount + 1 ? (
-                                <PageCount
-                                    countDisplay={element}
-                                    pageClick={this.pageClick}
-                                    style={"active"}
-                                />
-                            ) : (
-                                <PageCount
-                                    countDisplay={element}
-                                    pageClick={this.pageClick}
-                                    style={"notActive"}
-                                />
-                            )
-                        )}
+                <div className="d-flex justify-content-between w-100 fixed-bottom footer-pages">
+                    {this.state.page.length !== 1 && (
+                        <button
+                            onClick={this.previous}
+                            className="btn-previous"
+                        >
+                            Previous
+                        </button>
+                    )}
+
+                    <div className="d-flex">
+                        {this.state.page.length !== 1 &&
+                            this.state.page.map((element) =>
+                                element === this.state.pageCount + 1 ? (
+                                    <PageCount
+                                        countDisplay={element}
+                                        pageClick={this.pageClick}
+                                        style={"active"}
+                                    />
+                                ) : (
+                                    <PageCount
+                                        countDisplay={element}
+                                        pageClick={this.pageClick}
+                                        style={"notActive"}
+                                    />
+                                )
+                            )}
+                    </div>
+                    {this.state.page.length !== 1 && (
+                        <button onClick={this.next} className="btn-next">
+                            Next
+                        </button>
+                    )}
                 </div>
+
                 {/* <TableColumns /> */}
             </div>
         );
