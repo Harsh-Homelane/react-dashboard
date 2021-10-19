@@ -51,7 +51,7 @@ export default class Filters extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex ">
+                        <div className="d-flex w-25">
                             <button className="btn-apply">Apply</button>
                             <button className="btn-reset">Reset</button>
                         </div>

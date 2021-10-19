@@ -88,5 +88,135 @@
         "status": "Pushed to production",
         "factory": "test",
         "daysInProduction": "17"
+    },
+    "10": {
+        "customerId": "Ben-1",
+        "customerName": "Freelancer",
+        "showroomName": "Test Showroom",
+        "orderValue": "75642",
+        "WoodworkArmadio": "76423",
+        "status": "Pushed to production",
+        "factory": "",
+        "daysInProduction": "8"
+    },
+    "11": {
+        "customerId": "Ben-2",
+        "customerName": "website",
+        "showroomName": "Test",
+        "orderValue": "13426",
+        "WoodworkArmadio": "13796",
+        "status": "factory Assigned",
+        "factory": "TEST FACTORY",
+        "daysInProduction": "7"
+    },
+    "12": {
+        "customerId": "Ben-1",
+        "customerName": "Freelancer",
+        "showroomName": "Test Showroom",
+        "orderValue": "75642",
+        "WoodworkArmadio": "76423",
+        "status": "Pushed to production",
+        "factory": "",
+        "daysInProduction": "8"
+    },
+    "13": {
+        "customerId": "Ben-2",
+        "customerName": "website",
+        "showroomName": "Test",
+        "orderValue": "13426",
+        "WoodworkArmadio": "13796",
+        "status": "factory Assigned",
+        "factory": "TEST FACTORY",
+        "daysInProduction": "7"
+    },
+    "14": {
+        "customerId": "Ben-3",
+        "customerName": "Freelancer",
+        "showroomName": "Test Showroom",
+        "orderValue": "75642",
+        "WoodworkArmadio": "76423",
+        "status": "Pushed to production",
+        "factory": "",
+        "daysInProduction": "13"
+    },
+    "15": {
+        "customerId": "Ben-4",
+        "customerName": "Freelancer",
+        "showroomName": "Test Showroom",
+        "orderValue": "23213",
+        "WoodworkArmadio": "34213",
+        "status": "Pushed to production",
+        "factory": "",
+        "daysInProduction": "11"
+    },
+    "16": {
+        "customerId": "Ben-5",
+        "customerName": "Web",
+        "showroomName": "Test Showroom",
+        "orderValue": "4567",
+        "WoodworkArmadio": "46657",
+        "status": "Pushed to production",
+        "factory": "",
+        "daysInProduction": ""
+    },
+    "17": {
+        "customerId": "Ben-6",
+        "customerName": "Freelancer",
+        "showroomName": "Test Showroom",
+        "orderValue": "1233",
+        "WoodworkArmadio": "34534",
+        "status": "Pushed to production",
+        "factory": "",
+        "daysInProduction": "15"
+    },
+    "18": {
+        "customerId": "Ben-7",
+        "customerName": "Freelancer",
+        "showroomName": "Test Showroom",
+        "orderValue": "75642",
+        "WoodworkArmadio": "76423",
+        "status": "Pushed to production",
+        "factory": "",
+        "daysInProduction": "19"
+    },
+    "19": {
+        "customerId": "Ben-8",
+        "customerName": "Freelancer",
+        "showroomName": "Test Showroom",
+        "orderValue": "75642",
+        "WoodworkArmadio": "76423",
+        "status": "",
+        "factory": "",
+        "daysInProduction": "9"
+    },
+    "20": {
+        "customerId": "Ben-9",
+        "customerName": "Freelancer",
+        "showroomName": "Test Showroom",
+        "orderValue": "75642",
+        "WoodworkArmadio": "76423",
+        "status": "Pushed to production",
+        "factory": "test",
+        "daysInProduction": "17"
+    },
+    "21": {
+        "customerId": "Ben-1",
+        "customerName": "Freelancer",
+        "showroomName": "Test Showroom",
+        "orderValue": "75642",
+        "WoodworkArmadio": "76423",
+        "status": "Pushed to production",
+        "factory": "",
+        "daysInProduction": "8"
+    },
+    "22": {
+        "customerId": "Ben-2",
+        "customerName": "website",
+        "showroomName": "Test",
+        "orderValue": "13426",
+        "WoodworkArmadio": "13796",
+        "status": "factory Assigned",
+        "factory": "TEST FACTORY",
+        "daysInProduction": "7"
     }
 }

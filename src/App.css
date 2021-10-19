@@ -93,3 +93,20 @@
 .table-column-block {
     width: 11%;
 }
+
+.page-count-box {
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  margin: 3px;
+  border-radius: 4px;
+}
+
+/* .page-count-box:hover {
+  background-color: #dfdcdc;
+} */
+
+.footer-pages {
+  padding: 20px 16px;
+  background-color: white;
+}
