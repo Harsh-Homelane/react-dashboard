@@ -11,8 +11,9 @@
     background-color: white;
 }
 
-.custom-dropdown:active {
-    border: none;
+.custom-dropdown:focus,
+input:focus {
+    outline: none;
 }
 
 .header-center {

@@ -28,7 +28,7 @@ export default class Filters extends Component {
                             <div className="input-text">
                                 <div className="dropdown">
                                     <button
-                                        className="dropdown-toggle custom-dropdown"
+                                        className="dropdown-toggle custom-dropdown  w-100 d-flex justify-content-between align-items-center"
                                         // type="button"
                                         // id="dropdownMenuButton"
                                         data-toggle="dropdown"
