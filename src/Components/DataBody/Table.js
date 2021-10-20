@@ -67,7 +67,7 @@ export default class Table extends Component {
         }
     }
     pageClick = (pageNumber) => {
-        if (this.state.pageCount !== pageNumber) {
+        if (this.state.pageCount !== pageNumber - 1) {
             this.setState({ pageCount: pageNumber - 1 });
         }
     };

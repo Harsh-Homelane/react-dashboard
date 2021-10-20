@@ -79,8 +79,13 @@ input:focus {
     margin-right: 30px;
 }
 
-.btn-apply:active {
+.btn-apply:focus,
+.btn-hover:focus,
+.btn-hover-2:focus,
+.btn-previous:focus,
+.btn-next:focus {
     border: none;
+    outline: none;
 }
 
 .btn-reset {
@@ -154,9 +159,9 @@ input:focus {
     border-radius: 4px;
 }
 
-/* .page-count-box:hover {
-  background-color: #dfdcdc;
-} */
+.page-count-box:hover {
+  cursor: pointer;
+}
 
 .footer-pages {
     padding: 20px 16px;
@@ -176,6 +181,15 @@ input:focus {
 
     /* .header-down-options {
         padding: 0%;
+    } */
+
+    .btn-hover {
+        position: relative;
+        right: 50px;
+    }
+    /* .btn-hover-2 {
+        position: relative;
+        right: 250px;
     } */
 }
 
@@ -226,4 +240,30 @@ input:focus {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+.btn-hover {
+    z-index: 5;
+    position: absolute;
+    right: 100px;
+    width: 140px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+
+.btn-hover-2 {
+    z-index: 5;
+    position: absolute;
+    right: 250px;
+    width: 140px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
 }
